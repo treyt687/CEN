@@ -13,7 +13,7 @@ public class TestEC extends Compression {
 				String decompressed = null;
 				// compress the string to a byte array
 				try {
-					compressed = Compression.compress("originaltext.gz", "compressedtext.gz");
+					compressed = Compression.compress("CMPFiles/originaltext.gz", "CMPFiles/compressedtext.gz");
 					System.out.println(compressed);
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
@@ -21,7 +21,7 @@ public class TestEC extends Compression {
 				}
 				// decompress the byte array to a a string
 				try {
-					decompressed = Compression.decompress("compressedtext.gz", "decompressedtext.gz");
+					decompressed = Compression.decompress("CMPFiles/compressedtext.gz", "CMPFiles/decompressedtext.gz");
 					System.out.println(decompressed);
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
